@@ -23,7 +23,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="hover:text-primary-400 transition-colors">
-                  会社概要
+                  会社概要aaa
                 </Link>
               </li>
               <li>
