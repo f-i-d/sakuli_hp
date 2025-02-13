@@ -45,7 +45,7 @@ export default function Header() {
               製造設備
             </NavLink>
             <NavLink href="/support" isScrolled={isScrolled}>
-              サポート
+              Support
             </NavLink>
             <NavLink href="/contact" isScrolled={isScrolled}>
               お問い合わせ
@@ -70,7 +70,7 @@ export default function Header() {
               製造設備
             </NavLink>
             <NavLink href="/support" mobile>
-              サポート
+              Support
             </NavLink>
             <NavLink href="/contact" mobile>
               お問い合わせ
