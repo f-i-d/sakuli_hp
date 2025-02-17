@@ -5,6 +5,29 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
 
+function NavLink({
+  href,
+  children,
+  isScrolled = false,
+  mobile = false,
+}: {
+  href: string
+  children: React.ReactNode
+  isScrolled?: boolean
+  mobile?: boolean
+}) {
+  return (
+    <Link
+      href={href}
+      className={`${mobile ? "block py-2" : "inline-block"} ${
+        isScrolled ? "text-gray-700 hover:text-primary-600" : "text-white hover:text-primary-200"
+      } transition-colors`}
+    >
+      {children}
+    </Link>
+  )
+}
+
 export default function Header() {
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
@@ -38,6 +61,9 @@ export default function Header() {
             <NavLink href="/" isScrolled={isScrolled}>
               ホーム
             </NavLink>
+            <NavLink href="/about" isScrolled={isScrolled}>
+              会社概要
+            </NavLink>
             <NavLink href="/strengths" isScrolled={isScrolled}>
               私たちの強み
             </NavLink>
@@ -63,6 +89,9 @@ export default function Header() {
             <NavLink href="/" mobile>
               ホーム
             </NavLink>
+            <NavLink href="/about" mobile>
+              会社概要
+            </NavLink>
             <NavLink href="/strengths" mobile>
               私たちの強み
             </NavLink>
@@ -79,29 +108,6 @@ export default function Header() {
         )}
       </nav>
     </header>
-  )
-}
-
-function NavLink({
-  href,
-  children,
-  mobile = false,
-  isScrolled = true,
-}: { href: string; children: React.ReactNode; mobile?: boolean; isScrolled?: boolean }) {
-  const handleClick = () => {
-    window.scrollTo(0, 0)
-  }
-
-  return (
-    <Link
-      href={href}
-      onClick={handleClick}
-      className={`${mobile ? "block py-2" : "inline-block"} ${
-        isScrolled ? "text-gray-700 hover:text-primary-600" : "text-white hover:text-primary-200"
-      } transition-colors`}
-    >
-      {children}
-    </Link>
   )
 }
 
