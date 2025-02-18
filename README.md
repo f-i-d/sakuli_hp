@@ -59,4 +59,4 @@ git push origin master
 ```
 6. 本番環境の確認
 
-自動的にVercelにデプロイされるので、https://sakuli-hp.vercel.app/にアクセスして確認します。
+自動的にVercelにデプロイされるので、https://v0-sakuli-website.vercel.app/ にアクセスして確認します。
