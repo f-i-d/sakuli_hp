@@ -4,32 +4,76 @@ import { ArrowRight, Package, Shield, Truck, Star, ChevronRight } from "lucide-r
 
 export default function Home() {
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+    <div className="overflow-hidden">
+      {/* Hero Section - アニメーションを強化 */}
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-02-12%2015.37.32-fCf7RqPa6Q2ARVC0jjedHHY6lIb7GU.png"
-          alt="MOTENASU - 心に届くおもてなしの接客"
+          alt="SAKULI - アイデアをカタチに"
           fill
-          className="object-cover"
+          className="object-cover transform scale-105 animate-ken-burns"
           priority
         />
-        <div className="absolute inset-0 bg-black/20" /> {/* オーバーレイを追加して可読性を向上 */}
-        <div className="relative z-10 text-center text-white">
-          <h1 className="text-6xl font-bold mb-6 text-shadow animate-fade-in-up">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
+        <div className="relative z-10 text-center text-white max-w-4xl px-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
             アイデアをカタチに、
             <br />
-            未来を創る
+            <span className="text-primary-400">未来</span>を創る
           </h1>
-          <p className="text-2xl mb-8 text-shadow animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
             商品企画から最終製品化まで、
             <br />
-            トータルでサポートする製造パートナー
+            トータルでサポートする<span className="text-primary-300">製造パートナー</span>
           </p>
-          <Link href="/contact" className="btn text-lg animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <Link 
+            href="/contact" 
+            className="inline-flex items-center px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-full text-lg transition-all transform hover:scale-105 animate-fade-in-up shadow-lg"
+            style={{ animationDelay: "0.4s" }}
+          >
             お問い合わせ
             <ArrowRight className="ml-2" size={20} />
           </Link>
+        </div>
+      </section>
+
+      {/* Features Section - 新規追加 */}
+      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+            <span className="text-primary-600">SAKULI</span>が選ばれる理由
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              {
+                icon: <Package className="w-12 h-12 text-primary-500" />,
+                title: "一貫した製造体制",
+                description: "企画から製造、品質管理まで、すべての工程を一貫して管理します。",
+              },
+              {
+                icon: <Shield className="w-12 h-12 text-primary-500" />,
+                title: "品質へのこだわり",
+                description: "厳格な品質管理システムにより、安全で高品質な製品を提供します。",
+              },
+              {
+                icon: <Star className="w-12 h-12 text-primary-500" />,
+                title: "豊富な実績",
+                description: "多様な業界での製造実績により、お客様のニーズに柔軟に対応します。",
+              },
+            ].map((feature, index) => (
+              <div 
+                key={feature.title}
+                className="text-center p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+                style={{ animationDelay: `${0.2 * (index + 1)}s` }}
+              >
+                <div className="inline-block p-4 bg-primary-50 rounded-full mb-6">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -58,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* Product Samples Section */}
-      <section className="py-24">
+      <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="section-title">製品サンプル</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -69,7 +113,7 @@ export default function Home() {
             ].map((product, index) => (
               <div
                 key={product.name}
-                className="card overflow-hidden animate-fade-in-up"
+                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${0.2 * (index + 1)}s` }}
               >
                 <Image
@@ -77,10 +121,10 @@ export default function Home() {
                   alt={product.name}
                   width={400}
                   height={300}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover rounded-t-lg"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">{product.name}</h3>
                   <Link href="/products" className="text-primary-600 hover:text-primary-700 flex items-center">
                     詳細を見る
                     <ChevronRight size={20} className="ml-1" />
@@ -121,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="section-title">お客様の声</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -144,25 +188,13 @@ export default function Home() {
             ].map((testimonial, index) => (
               <div
                 key={testimonial.name}
-                className="card p-6 animate-fade-in-up"
+                className="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${0.2 * (index + 1)}s` }}
               >
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 font-bold text-xl mr-4">
-                    {testimonial.name[0]}
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">{testimonial.name}</h3>
-                    <p className="text-sm text-gray-600">{testimonial.company}</p>
-                  </div>
-                </div>
-                <p className="text-gray-700">{testimonial.comment}</p>
-                <div className="mt-4 flex text-primary-500">
-                  <Star className="w-5 h-5 fill-current" />
-                  <Star className="w-5 h-5 fill-current" />
-                  <Star className="w-5 h-5 fill-current" />
-                  <Star className="w-5 h-5 fill-current" />
-                  <Star className="w-5 h-5 fill-current" />
+                <p className="text-gray-700 mb-4">{testimonial.comment}</p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-gray-800">{testimonial.name}</p>
+                  <p className="text-gray-600 text-sm">{testimonial.company}</p>
                 </div>
               </div>
             ))}
@@ -206,15 +238,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-primary-600 text-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-8">製品開発のパートナーをお探しですか？</h2>
-          <p className="text-xl mb-12">SAKULIが、アイデアから製品化までトータルでサポートいたします。</p>
-          <Link href="/contact" className="btn btn-secondary text-lg">
-            お問い合わせはこちら
-            <ArrowRight className="ml-2" size={20} />
-          </Link>
+      {/* CTA Section - 新規追加 */}
+      <section className="py-24 bg-primary-600 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-500 opacity-50" />
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-3xl mx-auto text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              製品開発のパートナーをお探しですか？
+            </h2>
+            <p className="text-xl mb-12 opacity-90">
+              SAKULIは、お客様の製品開発における課題解決をサポートします。
+              まずはお気軽にご相談ください。
+            </p>
+            <Link 
+              href="/contact"
+              className="inline-flex items-center px-8 py-4 bg-white text-primary-600 rounded-full text-lg font-semibold transition-all transform hover:scale-105 hover:shadow-lg"
+            >
+              無料相談を始める
+              <ArrowRight className="ml-2" size={20} />
+            </Link>
+          </div>
         </div>
       </section>
     </div>
