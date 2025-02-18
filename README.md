@@ -1,4 +1,4 @@
-# my-v0-project
+# 株式会社SAKULIのホームページ
 
 株式会社SAKULIのホームページ構築プロジェクトです。
 本プロジェクトは Next.js を用いて作成されています。
@@ -54,9 +54,10 @@ npm run dev
 
 ```bash
 git add .
-git commit -m "更新内容のコメント"
-git push origin master
+git commit -m "更新内容のコメント" # ログとして残るので、何を更新したかを記載する
+git push origin master # 本番環境に反映
 ```
+
 6. 本番環境の確認
 
 自動的にVercelにデプロイされるので、https://v0-sakuli-website.vercel.app/ にアクセスして確認します。
