@@ -19,7 +19,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            会社概要
+            会社概要aaaaa
           </MotionH1>
           <MotionP
             initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl max-w-2xl mx-auto"
           >
-            企業理念に基づく革新的な技術と品質を提供します。お客様と共に未来を創造するパートナーとして、常に最先端を追求します。
+            企業理念に基づく革新的な技術と品質を提供します。お客様と共に未来を創造するパートナーとして、常に最先端を追求します。。。
           </MotionP>
         </div>
       </section>
