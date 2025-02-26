@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold text-primary-400">株式会社SAKULI</h3>
+            <h3 className="text-2xl font-semibold text-primary-400"><img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo1.png" width="200px"></img></h3>
             <nav>
               <ul className="space-y-2">
                 <li>
@@ -49,21 +49,11 @@ export default function Footer() {
                 <Mail size={18} className="mr-2 text-primary-400" /> info@sakuli.co.jp
               </p>
               <p className="flex items-center">
-                <Phone size={18} className="mr-2 text-primary-400" /> 03-1234-5678
+                <Phone size={18} className="mr-2 text-primary-400" /> 050-3850-9480
               </p>
               <p className="flex items-center">
-                <MapPin size={18} className="mr-2 text-primary-400" /> 〒123-4567 東京都○○区××町1-2-3
+                <MapPin size={18} className="mr-2 text-primary-400" /> 〒930-0827 富山県富山市上飯野15
               </p>
-            </div>
-          </div>
-          <div className="space-y-4">
-            <div className="flex space-x-4">
-              <Link href="#" className="hover:text-primary-400 transition-colors">
-                <Instagram size={24} />
-              </Link>
-              <Link href="#" className="hover:text-primary-400 transition-colors">
-                <Linkedin size={24} />
-              </Link>
             </div>
           </div>
         </div>

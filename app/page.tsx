@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section - アニメーションを強化 */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-02-12%2015.37.32-fCf7RqPa6Q2ARVC0jjedHHY6lIb7GU.png"
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg"
           alt="SAKULI - アイデアをカタチに"
           fill
           className="object-cover transform scale-105 animate-ken-burns"
@@ -104,12 +104,12 @@ export default function Home() {
       {/* Product Samples Section */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="section-title">製品サンプル</h2>
+          <h2 className="section-title">製品について</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "プレミアムサプリメント", image: "/product-1.jpg" },
-              { name: "有機茶葉パック", image: "/product-2.jpg" },
-              { name: "美容ドリンク", image: "/product-3.jpg" },
+              { name: "富山工場", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
+              { name: "ハードカプセル", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
+              { name: "茶葉パック", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
             ].map((product, index) => (
               <div
                 key={product.name}
@@ -117,7 +117,7 @@ export default function Home() {
                 style={{ animationDelay: `${0.2 * (index + 1)}s` }}
               >
                 <Image
-                  src={product.image || "/placeholder.svg"}
+                  src={product.image || "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg"}
                   alt={product.name}
                   width={400}
                   height={300}
@@ -133,6 +133,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p>上記以外の健康補助売食品の製造も提携先工場にてご対応可能です。</p>
         </div>
       </section>
 
@@ -164,43 +165,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="section-title">お客様の声</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "山田 太郎",
-                company: "株式会社ヘルシーライフ",
-                comment: "SAKULIさんのOEM製造サービスのおかげで、高品質な製品を迅速に市場に投入できました。",
-              },
-              {
-                name: "佐藤 花子",
-                company: "グリーンティー株式会社",
-                comment: "茶葉パックの品質が素晴らしく、お客様からの評判も上々です。細やかなサポートに感謝しています。",
-              },
-              {
-                name: "鈴木 一郎",
-                company: "ビューティーケア株式会社",
-                comment: "製造から物流まで一貫してサポートしていただき、業務効率が大幅に向上しました。",
-              },
-            ].map((testimonial, index) => (
-              <div
-                key={testimonial.name}
-                className="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${0.2 * (index + 1)}s` }}
-              >
-                <p className="text-gray-700 mb-4">{testimonial.comment}</p>
-                <div className="border-t pt-4">
-                  <p className="font-semibold text-gray-800">{testimonial.name}</p>
-                  <p className="text-gray-600 text-sm">{testimonial.company}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* News Section */}
       <section className="py-24 bg-gray-50">
@@ -208,9 +173,9 @@ export default function Home() {
           <h2 className="section-title">最新ニュース</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "新製品発表：プレミアムサプリメントシリーズ", date: "2023年6月15日", image: "/news-1.jpg" },
-              { title: "製造ライン拡張のお知らせ", date: "2023年5月22日", image: "/news-2.jpg" },
-              { title: "国際品質認証を取得しました", date: "2023年4月10日", image: "/news-3.jpg" },
+              { title: "新製品発表：プレミアムサプリメントシリーズ", date: "準備中", image: "/news-1.jpg" },
+              { title: "製造ライン拡張のお知らせ", date: "準備中", image: "/news-2.jpg" },
+              { title: "国際品質認証を取得しました", date: "準備中", image: "/news-3.jpg" },
             ].map((news, index) => (
               <div
                 key={news.title}
