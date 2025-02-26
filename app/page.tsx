@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section - アニメーションを強化 */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg"
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
           alt="SAKULI - アイデアをカタチに"
           fill
           className="object-cover transform scale-105 animate-ken-burns"
@@ -108,8 +108,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: "富山工場", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
-              { name: "ハードカプセル", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
-              { name: "茶葉パック", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
+              { name: "ハードカプセル", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/supple.jpg" },
+              { name: "茶葉パック", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/tea.jpg" },
             ].map((product, index) => (
               <div
                 key={product.name}
@@ -173,9 +173,9 @@ export default function Home() {
           <h2 className="section-title">最新ニュース</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "新製品発表：プレミアムサプリメントシリーズ", date: "準備中", image: "/news-1.jpg" },
-              { title: "製造ライン拡張のお知らせ", date: "準備中", image: "/news-2.jpg" },
-              { title: "国際品質認証を取得しました", date: "準備中", image: "/news-3.jpg" },
+              { title: "新製品発表：プレミアムサプリメントシリーズ", date: "準備中", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/comingsoon.jpg" },
+              { title: "製造ライン拡張のお知らせ", date: "準備中", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/comingsoon.jpg" },
+              { title: "国際品質認証を取得しました", date: "準備中", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/comingsoon.jpg" },
             ].map((news, index) => (
               <div
                 key={news.title}
