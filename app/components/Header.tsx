@@ -55,7 +55,7 @@ export default function Header() {
             href="/"
             className={`font-bold text-2xl ${isScrolled ? "text-primary-600" : "text-white"} hover:text-primary-500 transition-colors`}
           >
-            <img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo1.png" width="200px"></img>
+            <img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo3.png" width="200px"></img>
           </Link>
           <div className="hidden md:flex space-x-6">
             <NavLink href="/" isScrolled={isScrolled}>

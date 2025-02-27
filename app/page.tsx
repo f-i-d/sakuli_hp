@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
         <div className="relative z-10 text-center text-white max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
-            アイデアをカタチに、
+            アイデアをカタチに
             <br />
             <span className="text-primary-400">未来</span>を創る
           </h1>
@@ -133,7 +133,9 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p>上記以外の健康補助売食品の製造も提携先工場にてご対応可能です。</p>
+          <p className="memo">
+          上記以外の健康補助売食品の製造も提携先工場にてご対応可能です。
+          </p>
         </div>
       </section>
 
