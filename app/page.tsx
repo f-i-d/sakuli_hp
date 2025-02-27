@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Package, Shield, Truck, Star, ChevronRight } from "lucide-react"
-
+import "./globals.css"
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -228,4 +228,3 @@ export default function Home() {
     </div>
   )
 }
-
