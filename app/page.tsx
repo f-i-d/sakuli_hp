@@ -43,6 +43,12 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
             <span className="text-primary-600">SAKULI</span>が選ばれる理由
           </h2>
+          <p className="memo">
+          <span className="memo-title">SAKULIは、「サプリメントの未来を切り開く企業」 です。</span><br />
+          私たちのサプリメントが、一人ひとりの健康という土壌に根を張り、未来に美しい花を咲かせる。<br />
+          そんな願いを込めて、革新と信頼のブランドとして成長し続けます。<br />
+          「今を満たし、未来を咲かせる」—— SAKULIがあなたの人生に寄り添い、健康と幸福の未来を共に創ります。<br />
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
@@ -75,18 +81,18 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <p className="memo">
-        SAKULIは、「サプリメントの未来を切り開く企業」 です。<br />
-        私たちのサプリメントが、一人ひとりの健康という土壌に根を張り、未来に美しい花を咲かせる。<br />
-        そんな願いを込めて、革新と信頼のブランドとして成長し続けます。<br />
-        今を満たし、未来を咲かせる」—— SAKULIがあなたの人生に寄り添い、健康と幸福の未来を共に創ります。<br />
-        </p>
       </section>
 
       {/* Services Section */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="section-title">事業内容</h2>
+          <p className="memo">
+          <span className="memo-title">SAKULIは、「サプリメントの未来を切り開く企業」 です。</span><br />
+          私たちのサプリメントが、一人ひとりの健康という土壌に根を張り、未来に美しい花を咲かせる。<br />
+          そんな願いを込めて、革新と信頼のブランドとして成長し続けます。<br />
+          「今を満たし、未来を咲かせる」—— SAKULIがあなたの人生に寄り添い、健康と幸福の未来を共に創ります。<br />
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               { title: "OEM・ODM受託製造", description: "高品質なカプセルや茶葉パックの製造", icon: Package },
@@ -176,7 +182,7 @@ export default function Home() {
 
 
       {/* News Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-50 news">
         <div className="container mx-auto px-6">
           <h2 className="section-title">最新ニュース</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

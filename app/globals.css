@@ -109,8 +109,18 @@ h1{
 .h-\[80vh\] {
   height: 90vh;
 }
+.memo-title{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
 .memo{
   text-align: center;
-  color: #1f4977;
-  margin-top: 20px;
+  margin: 15px 0 35px;
+  font-size: 19px;
+  line-height: 2;
+}
+.news{
+  display: none;
 }
