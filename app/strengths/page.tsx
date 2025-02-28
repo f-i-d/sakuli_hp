@@ -13,51 +13,45 @@ export default function Strengths() {
       title: "健康の「種」をまき、未来に「花」を咲かせる",
       description: "私たちは、サプリメントを単なる健康補助食品ではなく、「未来の自分をつくるための種」 と考えています。一人ひとりが健康で輝く未来を手に入れられるよう、最高品質の製品をお届けします。",
       icon: Cog,
-      image: "/strength-manufacturing.jpg",
+      image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-1.jpg",
     },
     {
       title: "科学と自然の調和で、革新を生み出す",
       description: "伝統的な自然由来の知恵と、最先端の科学技術を融合させ、新たな可能性を切り開きます。私たちは常に研究を重ね、「本当に良いものだけ」を提供し続けます。",
       icon: Shield,
-      image: "/strength-quality.jpg",
+      image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-2.jpg",
     },
     {
       title: "安全・信頼・誠実なものづくり",
       description: "お客様の健康を支える企業として、透明性のある製品開発 を徹底し、信頼されるブランドを築きます。品質管理はもちろん、成分の安全性、効果の裏付けを明確にし、誠実なものづくりを行います。",
       icon: Zap,
-      image: "/strength-flexibility.jpg",
+      image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-3.jpg",
     },
     {
       title: "環境と社会にやさしい企業であり続ける",
       description: "健康だけでなく、地球環境にも配慮したサプリメントを開発し、持続可能な社会に貢献します。パッケージのエコ素材使用、環境保護活動への参加など、企業としての社会的責任を果たします。",
       icon: Zap,
-      image: "/strength-flexibility.jpg",
+      image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-4.jpg",
     },
   ]
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white">
       {/* Hero Section */}
-      <section className="bg-primary-600 text-white py-24 px-6">
-        <div className="container mx-auto text-center">
-          <motion.h1
-            className="text-4xl md:text-5xl font-bold mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            「未来を咲かせる、次世代サプリメント」<br />
-            健康とは人生の「土台」
-          </motion.h1>
-          <motion.p
-            className="text-xl mb-8 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            その土台をしっかり支え、未来へとつなげることで、<br />人々の「なりたい自分」を実現する。<br />
-            「SAKULI」は、科学と自然の力を最大限に活かし、<br />革新的なサプリメントで「健やかな未来」 を創ります。
-          </motion.p>
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          alt="SAKULI - アイデアをカタチに"
+          fill
+          className="object-cover transform scale-105 animate-ken-burns"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
+        <div className="relative z-10 text-center text-white max-w-4xl px-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
+          「未来を咲かせる、次世代サプリメント」<br />
+          健康とは人生の「土台」
+          </h1>
         </div>
       </section>
 
@@ -88,7 +82,7 @@ export default function Strengths() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                SAKULIが目指すもの
+                企業理念
               </motion.h2>
               <div className="space-y-4">
                 {strengths.map((strength, index) => (

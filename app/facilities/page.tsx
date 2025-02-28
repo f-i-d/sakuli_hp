@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import "../globals.css"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronDown, ChevronRight, Maximize2, Minimize2 } from "lucide-react"
 
@@ -23,7 +24,7 @@ const facilities: Facility[] = [
       "AI画像認識による品質管理システム搭載",
       "自動洗浄システム内蔵",
     ],
-    image: "/capsule-machine.jpg",
+    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy1.jpeg",
   },
   {
     name: "多機能ブレンダー",
@@ -35,13 +36,13 @@ const facilities: Facility[] = [
       "CIP（定置洗浄）システム搭載",
       "タッチパネル式操作インターフェース",
     ],
-    image: "/blender.jpg",
+    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2.jpeg",
   },
   {
     name: "クリーンルーム",
     description: "ISO Class 7（10,000）規格のクリーンルーム。厳格な衛生管理のもと、高品質な製品製造を可能にします。",
     specs: ["面積: 1,000㎡", "空気清浄度: ISO Class 7（10,000）", "HEPA フィルター搭載", "温湿度管理システム完備"],
-    image: "/clean-room.jpg",
+    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy3.jpeg",
   },
   {
     name: "自動包装ライン",
@@ -53,7 +54,7 @@ const facilities: Facility[] = [
       "インライン重量チェッカー搭載",
       "日付印字システム内蔵",
     ],
-    image: "/packaging-line.jpg",
+    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy4.jpeg",
   },
   {
     name: "品質管理ラボ",
@@ -64,7 +65,7 @@ const facilities: Facility[] = [
       "ICP-MS（誘導結合プラズマ質量分析計）",
       "微生物検査設備",
     ],
-    image: "/quality-lab.jpg",
+    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy5.jpeg",
   },
 ]
 
@@ -91,25 +92,23 @@ export default function Facilities() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="bg-primary-600 text-white py-24 px-6">
-        <div className="container mx-auto text-center">
-          <motion.h1
-            className="text-4xl md:text-5xl font-bold mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            最先端の製造設備
-          </motion.h1>
-          <motion.p
-            className="text-xl mb-8 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            SAKULIは、最新のテクノロジーを駆使した製造設備を備え、 高品質な製品を効率的に生産します。私たちの設備が、
-            お客様の製品を次のレベルへと引き上げます。
-          </motion.p>
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          alt="SAKULI - アイデアをカタチに"
+          fill
+          className="object-cover transform scale-105 animate-ken-burns"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
+        <div className="relative z-10 text-center text-white max-w-4xl px-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
+          最先端の製造設備
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
+          SAKULIは、最新のテクノロジーを駆使した製造設備を備え、 高品質な製品を効率的に生産します。私たちの設備が、
+          お客様の製品を次のレベルへと引き上げます。
+          </p>
         </div>
       </section>
 
@@ -182,61 +181,20 @@ export default function Facilities() {
           </div>
         </div>
       </section>
-
-      {/* Virtual Tour Section */}
-      <section className="py-24 px-6 bg-gray-100">
-        <div className="container mx-auto text-center">
-          <motion.h2
-            className="text-3xl font-bold mb-8 text-primary-800"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            バーチャル工場見学
-          </motion.h2>
-          <motion.p
-            className="text-xl mb-12 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            最新のVR技術を使用して、SAKULIの製造施設をバーチャルで体験できます。
-            実際の製造プロセスを間近でご覧いただけます。
-          </motion.p>
-          <motion.a
-            href="/virtual-tour"
-            className="inline-flex items-center bg-primary-600 text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-primary-700 transition-colors duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            バーチャルツアーを開始
-            <ChevronRight className="ml-2" />
-          </motion.a>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 px-6 bg-primary-600 text-white">
-        <div className="container mx-auto text-center">
-          <motion.h2
-            className="text-4xl font-bold mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+      
+            {/* CTA Section - 新規追加 */}
+            <section className="py-24 bg-primary-600 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-500 opacity-50" />
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-3xl mx-auto text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
             SAKULIの製造力を体験しませんか？
-          </motion.h2>
-          <motion.p
-            className="text-xl mb-8 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+            </h2>
+            <p className="text-xl mb-12 opacity-90">
             最先端の設備と熟練のスタッフが、あなたの製品を最高品質で製造します。
             お問い合わせいただければ、詳細な情報と個別のご提案をさせていただきます。
-          </motion.p>
-          <motion.a
+            </p>
+            <motion.a
             href="/contact"
             className="inline-block bg-white text-primary-600 font-semibold py-3 px-8 rounded-full text-lg hover:bg-primary-100 transition-colors duration-300"
             initial={{ opacity: 0, y: 20 }}
@@ -245,8 +203,10 @@ export default function Facilities() {
           >
             お問い合わせはこちら
           </motion.a>
+          </div>
         </div>
       </section>
+
     </div>
   )
 }

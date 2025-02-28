@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { ArrowRight, Send, CheckCircle } from "lucide-react"
 import Link from "next/link"
-
+import Image from "next/image"
 type FormData = {
   name: string
   email: string
@@ -50,11 +50,21 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white">
       {/* Header Section */}
-      <section className="bg-primary-600 text-white py-24 px-6">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">お問い合わせ</h1>
-          <p className="text-xl mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            製品開発やOEM製造についてのご質問、ご相談をお待ちしております。
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          alt="SAKULI - アイデアをカタチに"
+          fill
+          className="object-cover transform scale-105 animate-ken-burns"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
+        <div className="relative z-10 text-center text-white max-w-4xl px-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
+          お問い合わせ
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
+          製品開発やOEM製造についてのご質問、ご相談をお待ちしております。
           </p>
         </div>
       </section>
