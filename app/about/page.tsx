@@ -1,6 +1,8 @@
 import React from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { MotionH1, MotionP } from "@/components/ClientMotion"
+import Image from "next/image"
+import Link from "next/link"
 
 export const metadata = {
   title: "会社概要 - 株式会社SAKULI",
@@ -11,24 +13,22 @@ export default function About() {
   return (
     <>
       {/* Hero セクション - ヘッダー部分 */}
-      <section className="bg-primary-600 text-white py-24 px-6">
-        <div className="container mx-auto text-center">
-          <MotionH1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold mb-6"
-          >
-            会社概要aaaaa
-          </MotionH1>
-          <MotionP
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl max-w-2xl mx-auto"
-          >
-            企業理念に基づく革新的な技術と品質を提供します。お客様と共に未来を創造するパートナーとして、常に最先端を追求します。。。
-          </MotionP>
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          alt="SAKULI - アイデアをカタチに"
+          fill
+          className="object-cover transform scale-105 animate-ken-burns"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
+        <div className="relative z-10 text-center text-white max-w-4xl px-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
+           会社概要
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
+           企業理念に基づく革新的な技術と品質を提供します。お客様と共に未来を創造するパートナーとして、常に最先端を追求します。
+          </p>
         </div>
       </section>
 
@@ -60,7 +60,7 @@ export default function About() {
                   </li>
                   <li className="flex">
                     <span className="font-semibold w-32 text-right">設立:</span>
-                    <span className="ml-4">2000年4月</span>
+                    <span className="ml-4">2025年2月</span>
                   </li>
                   <li className="flex">
                     <span className="font-semibold w-32 text-right">資本金:</span>
@@ -68,11 +68,11 @@ export default function About() {
                   </li>
                   <li className="flex">
                     <span className="font-semibold w-32 text-right">所在地:</span>
-                    <span className="ml-4">東京都渋谷区〇〇町1-2-3</span>
+                    <span className="ml-4">富山県富山市上飯野15</span>
                   </li>
                   <li className="flex">
                     <span className="font-semibold w-32 text-right">代表者:</span>
-                    <span className="ml-4">山田 太郎</span>
+                    <span className="ml-4">竹内 雅輝</span>
                   </li>
                   <li className="flex">
                     <span className="font-semibold w-32 text-right">事業内容:</span>
@@ -91,13 +91,16 @@ export default function About() {
               </CardHeader>
               <CardContent className="pt-4 space-y-4 text-gray-700 text-lg">
                 <p>
-                  当社は「イノベーションで未来を切り拓く」という理念の下、
-                  お客様の期待を超えるソリューションを提供しています。技術と情熱を融合し、
-                  常に新たな価値の創造に挑戦しています。
-                </p>
-                <p>
-                  今後も、グローバル展開を視野に入れた事業戦略と先進技術の融合により、
-                  より高い成長を実現してまいります。
+                「株式会社SAKULIの存在意義と事業展望
+株式会社SAKULIは、北陸・富山を拠点にサプリメント製造・物流を展開し、
+月間500万円の粗利（年間1億2千万円）を目指す 企業です。
+
+事業拡大の目安として、自社工場建設やGMP認証取得 を視野に入れ、品質と信頼性の向上を図ります。
+健康食品市場は飽和傾向にあるものの、日本国内で1兆円規模の産業として成長の余地が十分にあります。
+
+オーガニック路線の導入や、クロスセル・アップセル戦略を活用し、
+新しい価値を提供することで市場競争を勝ち抜く ビジネスモデルを構築します。
+この事業は、「SAKULI」がサプリメント業界に革新をもたらし、持続的成長へ向かう第一歩です。
                 </p>
               </CardContent>
             </Card>
@@ -106,7 +109,33 @@ export default function About() {
           {/* フッターメッセージ */}
           <div className="mt-12 text-center">
             <p className="text-gray-500 text-sm">
-              ※ 上記の内容はサンプル情報です。
+            会社名「株式会社SAKULI（サクリ）」命名の背景とビジョン
+「SAKULI（サクリ）」 という名前には、
+未来に花開くサプリメントの可能性と、人々の健康を支える使命が込められています。
+
+「SAKURA（桜）」の**「咲く」** という言葉と、
+「SUPPLEMENT（サプリメント）」を掛け合わせたこの造語は、
+「健康と美しさが満開に花開く未来を創る」 という願いを表現しています。
+
+「花開く」という想い
+
+私たちは、ただのサプリメントメーカーではなく、
+「健康という大地に、未来の幸福を咲かせる企業」 でありたいと考えています。
+
+一粒一粒に込められた成分が、人々の毎日を彩り、やがて大きな花を咲かせるように、
+健康と幸福を届けることが私たちの使命です。
+
+「未来に根を張るサプリメント」
+「今、健康を整えることが、未来の自分を創る。」
+
+そんな考えのもと、私たちは最新の科学と自然の力を融合し、
+次世代のサプリメントを生み出します。
+
+「SAKULI」が象徴するのは、単なる栄養補助ではなく、
+人々の人生そのものを豊かにする、未来に根付くサプリメントです。
+
+株式会社SAKULI
+代表取締役社長　竹内 雅輝
             </p>
           </div>
         </div>

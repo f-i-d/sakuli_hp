@@ -11,28 +11,18 @@ export default function Footer() {
             <nav>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className="hover:text-primary-400 transition-colors">
-                    ホーム
-                  </Link>
-                </li>
-                <li>
                   <Link href="/about" className="hover:text-primary-400 transition-colors">
                     会社概要
                   </Link>
                 </li>
                 <li>
                   <Link href="/strengths" className="hover:text-primary-400 transition-colors">
-                    私たちの強み
+                    私たちについて
                   </Link>
                 </li>
                 <li>
                   <Link href="/facilities" className="hover:text-primary-400 transition-colors">
                     製造設備
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/support" className="hover:text-primary-400 transition-colors">
-                    サポート
                   </Link>
                 </li>
                 <li>

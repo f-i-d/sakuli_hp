@@ -58,20 +58,14 @@ export default function Header() {
             <img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo3.png" width="200px"></img>
           </Link>
           <div className="hidden md:flex space-x-6">
-            <NavLink href="/" isScrolled={isScrolled}>
-              ホーム
-            </NavLink>
             <NavLink href="/about" isScrolled={isScrolled}>
               会社概要
             </NavLink>
             <NavLink href="/strengths" isScrolled={isScrolled}>
-              私たちの強み
+              私たちについて
             </NavLink>
             <NavLink href="/facilities" isScrolled={isScrolled}>
               製造設備
-            </NavLink>
-            <NavLink href="/support" isScrolled={isScrolled}>
-              サポート
             </NavLink>
             <NavLink href="/contact" isScrolled={isScrolled}>
               お問い合わせ
@@ -93,13 +87,10 @@ export default function Header() {
               会社概要
             </NavLink>
             <NavLink href="/strengths" mobile>
-              私たちの強み
+              私たちについて
             </NavLink>
             <NavLink href="/facilities" mobile>
               製造設備
-            </NavLink>
-            <NavLink href="/support" mobile>
-              サポート
             </NavLink>
             <NavLink href="/contact" mobile>
               お問い合わせ

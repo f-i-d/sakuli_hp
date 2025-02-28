@@ -1,5 +1,5 @@
 "use client"
-
+import "../globals.css"
 import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
@@ -10,34 +10,28 @@ export default function Strengths() {
 
   const strengths = [
     {
-      title: "一貫した製造プロセス",
-      description: "原料調達から最終製品化まで、すべての工程を自社で管理。品質と効率を最大化します。",
+      title: "健康の「種」をまき、未来に「花」を咲かせる",
+      description: "私たちは、サプリメントを単なる健康補助食品ではなく、「未来の自分をつくるための種」 と考えています。一人ひとりが健康で輝く未来を手に入れられるよう、最高品質の製品をお届けします。",
       icon: Cog,
       image: "/strength-manufacturing.jpg",
     },
     {
-      title: "最先端の品質管理",
-      description: "AI搭載の検査システムと熟練の目による二重チェック体制で、最高品質を保証します。",
+      title: "科学と自然の調和で、革新を生み出す",
+      description: "伝統的な自然由来の知恵と、最先端の科学技術を融合させ、新たな可能性を切り開きます。私たちは常に研究を重ね、「本当に良いものだけ」を提供し続けます。",
       icon: Shield,
       image: "/strength-quality.jpg",
     },
     {
-      title: "柔軟な生産体制",
-      description: "小ロットから大量生産まで、お客様のニーズに合わせた生産体制を整えています。",
+      title: "安全・信頼・誠実なものづくり",
+      description: "お客様の健康を支える企業として、透明性のある製品開発 を徹底し、信頼されるブランドを築きます。品質管理はもちろん、成分の安全性、効果の裏付けを明確にし、誠実なものづくりを行います。",
       icon: Zap,
       image: "/strength-flexibility.jpg",
     },
     {
-      title: "エキスパートチーム",
-      description: "経験豊富な専門家チームが、製品開発から販売戦略までトータルサポートします。",
-      icon: Users,
-      image: "/strength-team.jpg",
-    },
-    {
-      title: "持続可能な取り組み",
-      description: "環境に配慮した製造プロセスと、地域社会への貢献を重視しています。",
-      icon: TrendingUp,
-      image: "/strength-sustainability.jpg",
+      title: "環境と社会にやさしい企業であり続ける",
+      description: "健康だけでなく、地球環境にも配慮したサプリメントを開発し、持続可能な社会に貢献します。パッケージのエコ素材使用、環境保護活動への参加など、企業としての社会的責任を果たします。",
+      icon: Zap,
+      image: "/strength-flexibility.jpg",
     },
   ]
 
@@ -52,7 +46,8 @@ export default function Strengths() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            私たちの強み
+            「未来を咲かせる、次世代サプリメント」<br />
+            健康とは人生の「土台」
           </motion.h1>
           <motion.p
             className="text-xl mb-8 max-w-2xl mx-auto"
@@ -60,8 +55,8 @@ export default function Strengths() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            SAKULIは、革新的な技術と豊富な経験を組み合わせ、お客様のビジョンを現実のものとします。
-            私たちの強みが、あなたのビジネスの成功を支えます。
+            その土台をしっかり支え、未来へとつなげることで、<br />人々の「なりたい自分」を実現する。<br />
+            「SAKULI」は、科学と自然の力を最大限に活かし、<br />革新的なサプリメントで「健やかな未来」 を創ります。
           </motion.p>
         </div>
       </section>
@@ -93,7 +88,7 @@ export default function Strengths() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                SAKULIの5つの強み
+                SAKULIが目指すもの
               </motion.h2>
               <div className="space-y-4">
                 {strengths.map((strength, index) => (
@@ -147,30 +142,18 @@ export default function Strengths() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            SAKULIを選ぶメリット
+            SAKULIが目指すもの
           </motion.h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "時間とコストの削減",
-                description: "一貫した製造プロセスにより、製品化までの時間とコストを大幅に削減できます。",
+                title: "科学 × 自然の融合",
+                description: "最新の研究と天然素材を組み合わせ、効果のある製品を提供",
               },
-              { title: "品質の安定性", description: "厳格な品質管理システムにより、常に高品質な製品を提供します。" },
+              { title: "安全性と品質へのこだわり", description: "厳格な品質管理で、安心して続けられるサプリメントを追求" },
               {
-                title: "カスタマイズの自由度",
-                description: "お客様のニーズに合わせて、製品仕様や生産量を柔軟に調整します。",
-              },
-              {
-                title: "専門知識の活用",
-                description: "豊富な経験を持つ専門家チームが、製品開発から販売戦略までサポートします。",
-              },
-              {
-                title: "リスク軽減",
-                description: "製造に関するリスクを当社が管理することで、お客様のリスクを軽減します。",
-              },
-              {
-                title: "ブランド価値の向上",
-                description: "高品質な製品と持続可能な取り組みにより、お客様のブランド価値向上に貢献します。",
+                title: "持続可能な社会への貢献",
+                description: "環境に配慮した製品開発と、サステナブルな企業運営",
               },
             ].map((benefit, index) => (
               <motion.div
@@ -189,26 +172,50 @@ export default function Strengths() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 bg-primary-600 text-white">
-        <div className="container mx-auto text-center">
-          <motion.h2
-            className="text-4xl font-bold mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+      {/* FAQ Section */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold mb-8 text-center">よくあるご質問</h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: "最小ロット数はありますか？",
+                a: "はい、製品によって異なりますが、一般的に1000個からの受注が可能です。詳細はお問い合わせください。",
+              },
+              {
+                q: "納期はどのくらいですか？",
+                a: "標準的な製品で約4〜6週間です。ただし、製品の複雑さや数量によって変動する場合があります。",
+              },
+              {
+                q: "サンプル製作は可能ですか？",
+                a: "はい、可能です。サンプル製作にかかる費用と時間は、製品によって異なります。お気軽にご相談ください。",
+              },
+            ].map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white shadow rounded-lg p-6 animate-fade-in-up"
+                style={{ animationDelay: `${0.1 * (index + 1)}s` }}
+              >
+                <h3 className="text-lg font-semibold mb-2">{faq.q}</h3>
+                <p className="text-gray-600">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* CTA Section - 新規追加 */}
+      <section className="py-24 bg-primary-600 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-500 opacity-50" />
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-3xl mx-auto text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
             SAKULIの強みを活かしませんか？
-          </motion.h2>
-          <motion.p
-            className="text-xl mb-8 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+            </h2>
+            <p className="text-xl mb-12 opacity-90">
             製品開発から製造、販売サポートまで。SAKULIがあなたのビジネスの成功をトータルでサポートします。
-          </motion.p>
-          <motion.a
+            </p>
+            <motion.a
             href="/contact"
             className="inline-block bg-white text-primary-600 font-semibold py-3 px-8 rounded-full text-lg hover:bg-primary-100 transition-colors duration-300"
             initial={{ opacity: 0, y: 20 }}
@@ -217,8 +224,10 @@ export default function Strengths() {
           >
             お問い合わせはこちら
           </motion.a>
+          </div>
         </div>
       </section>
+
     </div>
   )
 }

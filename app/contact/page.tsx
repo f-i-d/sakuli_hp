@@ -146,37 +146,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">よくあるご質問</h2>
-          <div className="space-y-6">
-            {[
-              {
-                q: "最小ロット数はありますか？",
-                a: "はい、製品によって異なりますが、一般的に1000個からの受注が可能です。詳細はお問い合わせください。",
-              },
-              {
-                q: "納期はどのくらいですか？",
-                a: "標準的な製品で約4〜6週間です。ただし、製品の複雑さや数量によって変動する場合があります。",
-              },
-              {
-                q: "サンプル製作は可能ですか？",
-                a: "はい、可能です。サンプル製作にかかる費用と時間は、製品によって異なります。お気軽にご相談ください。",
-              },
-            ].map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white shadow rounded-lg p-6 animate-fade-in-up"
-                style={{ animationDelay: `${0.1 * (index + 1)}s` }}
-              >
-                <h3 className="text-lg font-semibold mb-2">{faq.q}</h3>
-                <p className="text-gray-600">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
