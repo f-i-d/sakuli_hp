@@ -169,7 +169,7 @@ export default function Strengths() {
       {/* FAQ Section */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">よくあるご質問</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center question">よくあるご質問</h2>
           <div className="space-y-6">
             {[
               {
@@ -190,7 +190,7 @@ export default function Strengths() {
                 className="bg-white shadow rounded-lg p-6 animate-fade-in-up"
                 style={{ animationDelay: `${0.1 * (index + 1)}s` }}
               >
-                <h3 className="text-lg font-semibold mb-2">{faq.q}</h3>
+                <h3 className="text-lg font-semibold mb-2 question">{faq.q}</h3>
                 <p className="text-gray-600">{faq.a}</p>
               </div>
             ))}

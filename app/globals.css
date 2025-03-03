@@ -65,7 +65,7 @@ body {
 }
 .section-title::after {
   bottom: -14px;
-  background-color: rgb(105 192 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 173 172 / var(--tw-bg-opacity, 1));
 }
 .bg-primary-500 {
   background-color: rgb(140 198 63 / var(--tw-bg-opacity, 1));
@@ -125,4 +125,11 @@ h1{
 }
 .news{
   display: none;
+}
+.interview{
+  width: 80%;
+  margin: 0 auto;
+}
+.question{
+  color: #1f4977;
 }

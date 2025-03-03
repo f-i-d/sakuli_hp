@@ -88,10 +88,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <h2 className="section-title">事業内容</h2>
           <p className="memo">
-          <span className="memo-title">SAKULIは、「サプリメントの未来を切り開く企業」 です。</span><br />
-          私たちのサプリメントが、一人ひとりの健康という土壌に根を張り、未来に美しい花を咲かせる。<br />
-          そんな願いを込めて、革新と信頼のブランドとして成長し続けます。<br />
-          「今を満たし、未来を咲かせる」—— SAKULIがあなたの人生に寄り添い、健康と幸福の未来を共に創ります。<br />
+          <span className="memo-title">企業理念に基づく革新的な技術と品質を提供します。<br />お客様と共に未来を創造するパートナーとして、常に最先端を追求します。</span>
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -137,7 +134,7 @@ export default function Home() {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{product.name}</h3>
-                  <Link href="/products" className="text-primary-600 hover:text-primary-700 flex items-center">
+                  <Link href="/facilities" className="text-primary-600 hover:text-primary-700 flex items-center">
                     詳細を見る
                     <ChevronRight size={20} className="ml-1" />
                   </Link>
