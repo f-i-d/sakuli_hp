@@ -133,3 +133,10 @@ h1{
 .question{
   color: #1f4977;
 }
+.process{
+  padding: 10px;
+  background-color: #fff;
+}
+.from-primary-50 {
+  --tw-gradient-from: #fff var(--tw-gradient-from-position);
+}
