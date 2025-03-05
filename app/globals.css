@@ -90,7 +90,7 @@ body {
 
 .from-black\/40 {
   --tw-gradient-from: rgb(31 73 119 / 0.4) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(31 73 119 / 0.2) var(--tw-gradient-to-position);
+  --tw-gradient-to: rgb(31 73 119 / 0.3) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .text-shadow {
@@ -111,7 +111,6 @@ h1{
 }
 .memo-title{
   text-align: center;
-  margin-top: 10px;
   font-size: 22px;
   font-weight: bold;
   color: #1f4977;
@@ -157,9 +156,9 @@ h1{
 h3{
   color: #ff7bac !important;
 }
-.space-y-4 .bg-white {
+.bg-white {
   box-shadow: 1px 1px 5px #c9d3d6;
-  border-radius: 10px; 
+  border-radius: 5px; 
 }
 .bg-primary-100 {
   --tw-bg-opacity: 1;
@@ -171,10 +170,32 @@ h3{
 .poricy{
   color: #8cc63f;
 }
+section{
+  padding: 50px 18px 40px !important;
+}
+.text-xl{
+  margin-bottom: 30px;
+}
+.top-title{
+  margin-bottom: 35px;
+}
 @media (max-width: 640px) {
-header nav a{
+  header nav a{
     color: #8cc63f !important;
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+  }
+  header nav a:first-child {
+    padding-top: 0px;
+  }
+  .top-title{
+    padding-top: 20px;
+  }
+  .interview{
+    width: 95%;
+    margin: 0 auto;
   }
 }
 

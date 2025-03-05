@@ -15,7 +15,7 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
-        <div className="relative z-10 text-center text-white max-w-4xl px-6">
+        <div className="relative z-10 text-center text-white max-w-4xl px-6 top-title">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
             アイデアを<br className="sp" />カタチに
             <br />
@@ -40,7 +40,7 @@ export default function Home() {
       {/* Features Section - 新規追加 */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800 top-title">
             <span className="text-primary-600">SAKULI</span>が選ばれる理由
           </h2>
           <p className="memo">
