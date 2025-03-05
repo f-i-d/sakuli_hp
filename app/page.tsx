@@ -17,14 +17,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
         <div className="relative z-10 text-center text-white max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
-            アイデアをカタチに
+            アイデアを<br className="sp" />カタチに
             <br />
             <span className="text-primary-400">未来</span>を創る
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
             商品企画から最終製品化まで、
             <br />
-            トータルでサポートする<span className="text-primary-300">製造パートナー</span>
+            トータルでサポートする<br className="sp" /><span className="text-primary-300">製造パートナー</span>
           </p>
           <Link 
             href="/contact" 

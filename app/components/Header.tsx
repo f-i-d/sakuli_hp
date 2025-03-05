@@ -79,10 +79,7 @@ export default function Header() {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4 animate-fade-in-up">
-            <NavLink href="/" mobile>
-              ホーム
-            </NavLink>
+          <div className="md:hidden mt-4 bg-white rounded-lg p-4 animate-fade-in-up">
             <NavLink href="/about" mobile>
               会社概要
             </NavLink>

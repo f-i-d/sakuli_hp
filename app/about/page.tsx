@@ -54,28 +54,28 @@ export default function About() {
               </CardHeader>
               <CardContent className="pt-4">
                 <ul className="space-y-3 text-gray-700 text-lg">
-                  <li className="flex">
-                    <span className="font-semibold w-32">会社名</span>
+                  <li>
+                    <span className="font-semibold w-32">会社名 : </span>
                     <span className="ml-4">株式会社SAKULI</span>
                   </li>
-                  <li className="flex">
-                    <span className="font-semibold w-32">設立</span>
+                  <li>
+                    <span className="font-semibold w-32">設　立 : </span>
                     <span className="ml-4">2025年2月</span>
                   </li>
-                  <li className="flex">
-                    <span className="font-semibold w-32">資本金</span>
+                  <li>
+                    <span className="font-semibold w-32">資本金 : </span>
                     <span className="ml-4">1億円</span>
                   </li>
-                  <li className="flex">
-                    <span className="font-semibold w-32">所在地</span>
+                  <li>
+                    <span className="font-semibold w-32">所在地 : </span>
                     <span className="ml-4">富山県富山市上飯野15</span>
                   </li>
-                  <li className="flex">
-                    <span className="font-semibold w-32">代表者</span>
+                  <li>
+                    <span className="font-semibold w-32">代表者 : </span>
                     <span className="ml-4">竹内 雅輝</span>
                   </li>
-                  <li className="flex">
-                    <span className="font-semibold w-32">事業内容</span>
+                  <li>
+                    <span className="font-semibold w-32">事業内容 : </span>
                     <span className="ml-4">製品開発、品質管理、コンサルティング</span>
                   </li>
                 </ul>
@@ -127,7 +127,7 @@ export default function About() {
 
             「SAKULI」が象徴するのは、単なる栄養補助ではなく、<br />人々の人生そのものを豊かにする、未来に根付くサプリメントです。</i><br /><br />
 
-            株式会社SAKULI　代表取締役社長　竹内 雅輝
+            株式会社SAKULI<br />代表取締役社長　竹内 雅輝
             </p>
           </div>
         </div>

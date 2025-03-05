@@ -64,7 +64,7 @@ export default function Contact() {
           お問い合わせ
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
-          製品開発やOEM製造についてのご質問、ご相談をお待ちしております。
+          製品開発やOEM製造についてのご質問、<br className="sp" />ご相談をお待ちしております。
           </p>
         </div>
       </section>
