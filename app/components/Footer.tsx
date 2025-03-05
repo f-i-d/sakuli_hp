@@ -10,6 +10,11 @@ export default function Footer() {
             <h3 className="text-2xl font-semibold text-primary-400"><img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo1.png" width="200px"></img></h3>
             <nav>
               <ul className="space-y-2">
+              <li>
+                  <Link href="/" className="hover:text-primary-400 transition-colors">
+                    ホーム
+                  </Link>
+                </li>
                 <li>
                   <Link href="/about" className="hover:text-primary-400 transition-colors">
                     会社概要
