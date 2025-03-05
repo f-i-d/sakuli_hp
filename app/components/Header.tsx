@@ -58,6 +58,9 @@ export default function Header() {
             <img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo3.png" width="200px"></img>
           </Link>
           <div className="hidden md:flex space-x-6">
+          <NavLink href="/" mobile>
+              ホーム
+            </NavLink>
             <NavLink href="/about" isScrolled={isScrolled}>
               会社概要
             </NavLink>
@@ -80,6 +83,9 @@ export default function Header() {
         </div>
         {isOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg p-4 animate-fade-in-up">
+            <NavLink href="/" mobile>
+              ホーム
+            </NavLink>
             <NavLink href="/about" mobile>
               会社概要
             </NavLink>
