@@ -171,7 +171,7 @@ h3{
   color: #8cc63f;
 }
 section{
-  padding: 50px 18px 40px !important;
+  padding: 70px 10px 40px !important;
 }
 .text-xl{
   margin-bottom: 30px;
@@ -190,12 +190,15 @@ section{
   header nav a:first-child {
     padding-top: 0px;
   }
-  .top-title{
-    padding-top: 20px;
+  .leading-tight{
+    margin-top: 100px;
   }
   .interview{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+  }
+  section{
+    padding: 60px 8px 40px !important;
   }
 }
 
