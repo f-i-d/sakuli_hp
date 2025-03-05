@@ -140,3 +140,17 @@ h1{
 .from-primary-50 {
   --tw-gradient-from: #fff var(--tw-gradient-from-position);
 }
+.process{
+  text-align: center;
+  font-size: 19px;
+  padding-right: 35px;
+  line-height: 2;
+  color: #1f4977;
+}
+.title-c{
+  color: #8cc63f;
+}
+.bold{
+  font-weight: bold;
+  color: #8cc63f
+}

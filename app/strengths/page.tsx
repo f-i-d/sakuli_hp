@@ -18,19 +18,19 @@ export default function Strengths() {
     {
       title: "科学と自然の調和で、革新を生み出す",
       description: "伝統的な自然由来の知恵と、最先端の科学技術を融合させ、新たな可能性を切り開きます。私たちは常に研究を重ね、「本当に良いものだけ」を提供し続けます。",
-      icon: Shield,
+      icon: Zap,
       image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-2.jpg",
     },
     {
       title: "安全・信頼・誠実なものづくり",
       description: "お客様の健康を支える企業として、透明性のある製品開発 を徹底し、信頼されるブランドを築きます。品質管理はもちろん、成分の安全性、効果の裏付けを明確にし、誠実なものづくりを行います。",
-      icon: Zap,
+      icon: Users,
       image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-3.jpg",
     },
     {
       title: "環境と社会にやさしい企業であり続ける",
       description: "健康だけでなく、地球環境にも配慮したサプリメントを開発し、持続可能な社会に貢献します。パッケージのエコ素材使用、環境保護活動への参加など、企業としての社会的責任を果たします。",
-      icon: Zap,
+      icon: Shield,
       image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-4.jpg",
     },
   ]
@@ -40,7 +40,7 @@ export default function Strengths() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv4.png"
           alt="SAKULI - アイデアをカタチに"
           fill
           className="object-cover transform scale-105 animate-ken-burns"

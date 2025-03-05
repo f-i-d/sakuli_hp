@@ -15,7 +15,7 @@ export default function About() {
       {/* Hero セクション - ヘッダー部分 */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv1.png"
           alt="SAKULI - アイデアをカタチに"
           fill
           className="object-cover transform scale-105 animate-ken-burns"
@@ -48,34 +48,34 @@ export default function About() {
             {/* 企業情報カード */}
             <Card className="bg-white shadow-lg rounded-lg p-6">
               <CardHeader className="border-b border-gray-200 pb-4">
-                <CardTitle className="text-2xl font-bold text-gray-900">
+                <CardTitle className="text-2xl font-bold text-gray-900 title-c">
                   企業情報
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-4">
                 <ul className="space-y-3 text-gray-700 text-lg">
                   <li className="flex">
-                    <span className="font-semibold w-32 text-right">会社名:</span>
+                    <span className="font-semibold w-32">会社名</span>
                     <span className="ml-4">株式会社SAKULI</span>
                   </li>
                   <li className="flex">
-                    <span className="font-semibold w-32 text-right">設立:</span>
+                    <span className="font-semibold w-32">設立</span>
                     <span className="ml-4">2025年2月</span>
                   </li>
                   <li className="flex">
-                    <span className="font-semibold w-32 text-right">資本金:</span>
+                    <span className="font-semibold w-32">資本金</span>
                     <span className="ml-4">1億円</span>
                   </li>
                   <li className="flex">
-                    <span className="font-semibold w-32 text-right">所在地:</span>
+                    <span className="font-semibold w-32">所在地</span>
                     <span className="ml-4">富山県富山市上飯野15</span>
                   </li>
                   <li className="flex">
-                    <span className="font-semibold w-32 text-right">代表者:</span>
+                    <span className="font-semibold w-32">代表者</span>
                     <span className="ml-4">竹内 雅輝</span>
                   </li>
                   <li className="flex">
-                    <span className="font-semibold w-32 text-right">事業内容:</span>
+                    <span className="font-semibold w-32">事業内容</span>
                     <span className="ml-4">製品開発、品質管理、コンサルティング</span>
                   </li>
                 </ul>
@@ -85,7 +85,7 @@ export default function About() {
             {/* 企業理念＆ビジョンカード */}
             <Card className="bg-white shadow-lg rounded-lg p-6">
               <CardHeader className="border-b border-gray-200 pb-4">
-                <CardTitle className="text-2xl font-bold text-gray-900">
+                <CardTitle className="text-2xl font-bold text-gray-900 title-c">
                   企業理念 &amp; ビジョン
                 </CardTitle>
               </CardHeader>
@@ -108,14 +108,14 @@ export default function About() {
           {/* フッターメッセージ */}
           <div className="mt-12 text-center">
             <p className="memo interview">
-            「SAKULI（サクリ）」 という名前には、<br />
-            未来に花開くサプリメントの可能性と、人々の健康を支える使命が込められています。<br /><br />
+            <i><span className="bold">「SAKULI（サクリ）」 という名前には、<br />
+            未来に花開くサプリメントの可能性と、人々の健康を支える使命が込められています。</span><br /><br />
 
             「SAKURA（桜）」の**「咲く」** という言葉と、<br />
             「SUPPLEMENT（サプリメント）」を掛け合わせたこの造語は、<br />
             「健康と美しさが満開に花開く未来を創る」 という願いを表現しています。<br /><br />
 
-            「花開く」という想い<br />
+            <span className="bold">「花開く」という想い</span><br />
 
             私たちは、ただのサプリメントメーカーではなく、<br />「健康という大地に、未来の幸福を咲かせる企業」 でありたいと考えています。<br />
 
@@ -125,9 +125,9 @@ export default function About() {
 
             そんな考えのもと、私たちは最新の科学と自然の力を融合し、次世代のサプリメントを生み出します。<br />
 
-            「SAKULI」が象徴するのは、単なる栄養補助ではなく、人々の人生そのものを豊かにする、<br />未来に根付くサプリメントです。<br /><br />
+            「SAKULI」が象徴するのは、単なる栄養補助ではなく、<br />人々の人生そのものを豊かにする、未来に根付くサプリメントです。</i><br /><br />
 
-            株式会社SAKULI 代表取締役社長　竹内 雅輝
+            株式会社SAKULI　代表取締役社長　竹内 雅輝
             </p>
           </div>
         </div>

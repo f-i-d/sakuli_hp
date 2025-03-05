@@ -52,7 +52,7 @@ export default function Contact() {
       {/* Header Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv5.png"
           alt="SAKULI - アイデアをカタチに"
           fill
           className="object-cover transform scale-105 animate-ken-burns"

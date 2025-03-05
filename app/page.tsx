@@ -152,22 +152,27 @@ export default function Home() {
       <section className="py-24 bg-gradient-radial from-primary-50 to-white">
         <div className="container mx-auto px-6">
           <h2 className="section-title">製造プロセス</h2>
-          <div className="process">
+          <p className="memo">
+          商品企画から最終製品化まで、トータルであなたをサポートします。
+          </p>
+          <div className="flex flex-wrap justify-center items-center">
             {[
-              { name: "製造プロセス", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/process.png" },
-            ].map((product, index) => (
+              { step: "原料調達", icon: "🌿" },
+              { step: "品質検査", icon: "🔬" },
+              { step: "製造", icon: "🏭" },
+              { step: "パッケージング", icon: "📦" },
+              { step: "出荷", icon: "🚚" },
+            ].map((item, index) => (
               <div
-                key={product.name}
-                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-in-up"
+                key={item.step}
+                className="flex items-center mb-8 animate-fade-in-up process"
                 style={{ animationDelay: `${0.2 * (index + 1)}s` }}
               >
-                <Image
-                  src={product.image || "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/process.png"}
-                  alt={product.name}
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
+                <div className="w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center text-4xl">
+                  {item.icon}
+                </div>
+                {index < 5 && <div className="w-16 h-1 bg-primary-300 mx-4" />}
+                <div className="text-lg font-semibold">{item.step}</div>
               </div>
             ))}
           </div>
