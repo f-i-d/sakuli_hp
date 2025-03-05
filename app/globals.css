@@ -157,15 +157,9 @@ h1{
 h3{
   color: #ff7bac !important;
 }
-.space-y-4 h3{
-  color: #8cc63f
-}
 .space-y-4 .bg-white {
   box-shadow: 1px 1px 5px #c9d3d6;
   border-radius: 10px; 
-}
-.py-24 h3{
-  color: #8cc63f
 }
 .bg-primary-100 {
   --tw-bg-opacity: 1;
@@ -174,12 +168,16 @@ h3{
 .top-2{
   display: none;
 }
+.poricy{
+  color: #8cc63f;
+}
 @media (max-width: 640px) {
 header nav a{
     color: #8cc63f !important;
     font-size: 22px;
+  }
 }
-}
+
 @media (min-width: 640px) {
   .sp{
     display: none;
