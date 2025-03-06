@@ -61,7 +61,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
         <div className="relative z-10 text-center text-white max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
-          お問い<br className="sp" />合わせ
+          お問い合わせ
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
           製品開発やOEM製造についての<br className="sp" />ご質問、ご相談をお待ちしております。

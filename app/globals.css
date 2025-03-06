@@ -200,8 +200,13 @@ section{
   section{
     padding: 50px 8px 40px !important;
   }
+  .p-8 {
+    padding: 1rem;
+  }
+  .mb-6 {
+    margin-bottom: 0.5rem;
+  }
 }
-
 @media (min-width: 640px) {
   .sp{
     display: none;
