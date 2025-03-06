@@ -145,8 +145,8 @@ export default function Contact() {
           ) : (
             <div className="bg-white shadow-xl rounded-lg p-8 text-center animate-fade-in">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold mb-4">お問い合わせありがとうございます</h2>
-              <p className="mb-6">内容を確認の上、担当者より折り返しご連絡させていただきます。</p>
+              <h2 className="text-2xl font-bold mb-4 memo-title">お問い合わせありがとうございます</h2>
+              <p className="mb-6 memo">内容を確認の上、担当者より折り返しご連絡させていただきます。</p>
               <Link href="/" className="btn">
                 トップページに戻る
                 <ArrowRight className="ml-2" size={20} />
