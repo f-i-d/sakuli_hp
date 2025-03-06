@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="space-y-2">
               <p className="flex items-center">
-                <Mail size={18} className="mr-2 text-primary-400" /> info@sakuli.co.jp
+                <Mail size={18} className="mr-2 text-primary-400" /> info@sakuli.jp
               </p>
               <p className="flex items-center">
                 <Phone size={18} className="mr-2 text-primary-400" /> 050-3850-9480
