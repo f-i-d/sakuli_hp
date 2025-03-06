@@ -76,7 +76,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit(onSubmit)} className="bg-white shadow-xl rounded-lg p-8 animate-fade-in-up">
               <div className="mb-6">
                 <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
-                  お名前 *
+                  お名前 <span className="red">*</span>
                 </label>
                 <input
                   {...register("name", { required: "お名前は必須です" })}
@@ -90,7 +90,7 @@ export default function Contact() {
 
               <div className="mb-6">
                 <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
-                  メールアドレス *
+                  メールアドレス<span className="red">*</span>
                 </label>
                 <input
                   {...register("email", {
@@ -123,7 +123,7 @@ export default function Contact() {
 
               <div className="mb-6">
                 <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">
-                  お問い合わせ内容 *
+                  お問い合わせ内容<span className="red">*</span>
                 </label>
                 <textarea
                   {...register("message", { required: "お問い合わせ内容は必須です" })}

@@ -186,6 +186,9 @@ section{
 .w-full{
   color: #1f4977;
 }
+.red{
+  color: red;
+}
 @media (max-width: 640px) {
   .pc{
     display: none;
