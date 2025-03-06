@@ -41,7 +41,7 @@ export default function About() {
             transition={{ duration: 1 }}
             className="memo"
           >
-            株式会社SAKULIは、最先端の技術と革新的なアプローチで業界をリードする企業です。お客様と共に未来を創造するため、日々新たな挑戦を続けています。
+            株式会社SAKULIは、最先端の技術と革新的なアプローチで業界をリードする企業です。<br className="pc" />お客様と共に未来を創造するため、日々新たな挑戦を続けています。
           </MotionP>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

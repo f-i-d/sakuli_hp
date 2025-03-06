@@ -180,6 +180,9 @@ section{
   margin-bottom: 35px;
 }
 @media (max-width: 640px) {
+  .pc{
+    display: none;
+  }
   header nav a{
     color: #8cc63f !important;
     font-size: 19px;
