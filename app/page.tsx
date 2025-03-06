@@ -75,7 +75,7 @@ export default function Home() {
                 <div className="inline-block p-4 bg-primary-50 rounded-full mb-6">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">{feature.title}</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary-700">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}

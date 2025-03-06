@@ -55,10 +55,10 @@ export default function Header() {
             href="/"
             className={`font-bold text-2xl ${isScrolled ? "text-primary-600" : "text-white"} hover:text-primary-500 transition-colors`}
           >
-            <img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo3.png" width="200px"></img>
+            <img src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/logo4.png" width="200px"></img>
           </Link>
           <div className="hidden md:flex space-x-6">
-          <NavLink href="/" mobile>
+            <NavLink href="/" isScrolled={isScrolled}>
               ホーム
             </NavLink>
             <NavLink href="/about" isScrolled={isScrolled}>
@@ -83,7 +83,7 @@ export default function Header() {
         </div>
         {isOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg p-4 animate-fade-in-up">
-            <NavLink href="/" mobile>
+            <NavLink href="" mobile>
               ホーム
             </NavLink>
             <NavLink href="/about" mobile>

@@ -39,7 +39,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="text-center text-lg max-w-3xl mx-auto mb-12 text-gray-700"
+            className="memo"
           >
             株式会社SAKULIは、最先端の技術と革新的なアプローチで業界をリードする企業です。お客様と共に未来を創造するため、日々新たな挑戦を続けています。
           </MotionP>
@@ -119,7 +119,7 @@ export default function About() {
 
             私たちは、ただのサプリメントメーカーではなく、<br />「健康という大地に、未来の幸福を咲かせる企業」 でありたいと考えています。<br />
 
-            一粒一粒に込められた成分が、人々の毎日を彩り、やがて大きな花を咲かせるように<br />、健康と幸福を届けることが私たちの使命です。<br /><br />
+            一粒一粒に込められた成分が、人々の毎日を彩り、やがて大きな花を咲かせるように、<br />健康と幸福を届けることが私たちの使命です。<br /><br />
 
             「未来に根を張るサプリメント」「今、健康を整えることが、未来の自分を創る。」<br />
 

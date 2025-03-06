@@ -49,9 +49,9 @@ export default function Strengths() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
         <div className="relative z-10 text-center text-white max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
-          「未来を咲かせる、次世代サプリメント」<br />
-          健康とは人生の「土台」
-          </h1>
+          「未来を咲かせる、次世代サプリメント」</h1>
+          <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>健康とは人生の「土台」
+          </p>
         </div>
       </section>
 
@@ -158,7 +158,7 @@ export default function Strengths() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <CheckCircle className="w-12 h-12 text-primary-500 mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-primary-700">{benefit.title}</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary-700">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
