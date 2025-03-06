@@ -189,6 +189,9 @@ section{
 .red{
   color: red;
 }
+.btn-tel{
+  padding-top: 20px;
+}
 @media (max-width: 640px) {
   .pc{
     display: none;

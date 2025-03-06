@@ -44,7 +44,7 @@ export default function Footer() {
                 <Mail size={18} className="mr-2 text-primary-400" /> info@sakuli.jp
               </p>
               <p className="flex items-center">
-                <Phone size={18} className="mr-2 text-primary-400" /> 050-3850-9480
+                <Phone size={18} className="mr-2 text-primary-400" /><u><a href="tel:050-3850-9480">050-3850-9480</a></u>
               </p>
               <p className="flex items-center">
                 <MapPin size={18} className="mr-2 text-primary-400" /> 〒930-0827 富山県富山市上飯野15

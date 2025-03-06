@@ -137,8 +137,14 @@ export default function Contact() {
 
               <div className="text-center">
                 <button type="submit" className="btn" disabled={isSubmitting}>
-                  {isSubmitting ? "送信中..." : "送信する"}
+                  {isSubmitting ? "送信中..." : "お問い合わせ内容を送信する"}
                   <Send className="ml-2" size={20} />
+                </button>
+              </div>
+
+              <div className="text-center btn-tel">
+                <button type="submit" className="btn" disabled={isSubmitting}>
+                  <a href="tel:050-3850-9480">電話で問い合わせる</a>
                 </button>
               </div>
             </form>
