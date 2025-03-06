@@ -179,6 +179,13 @@ section{
 .top-title{
   margin-bottom: 35px;
 }
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 21 / var(--tw-border-opacity, 1));
+}
+.w-full{
+  color: #1f4977;
+}
 @media (max-width: 640px) {
   .pc{
     display: none;

@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     // Send email
     await transporter.sendMail({
       from: `"SAKULI Website" <${process.env.SMTP_USER}>`,
-      to: "sawa@f-i-d.jp",
+      to: "suzuki_shizue@f-i-d.jp",
       subject: "新しいお問い合わせ",
       text: `
 名前: ${name}
