@@ -89,7 +89,7 @@ const facilities: Facility[] = [
        "・ラベル検出 : 光電露出センサー",
        "・計量ホッパー : ４種混合可",
       ],
-    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy3.jpeg",
+    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy6.jpeg",
   },
 ]
 
