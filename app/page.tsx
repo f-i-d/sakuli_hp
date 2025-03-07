@@ -92,7 +92,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { title: "OEM・ODM受託製造", description: "高品質なカプセルや茶葉パックの製造", icon: Package },
+              { title: "OEM・ODM受託製造", description: "高品質なハードカプセル・茶葉テトラバッグ・平バッグの充填加工", icon: Package },
               { title: "品質管理", description: "GMPの基準に準じた厳格な書類管理を実施", icon: Shield },
               { title: "販売・物流サポート", description: "グループ企業による一気通貫サービス", icon: Truck },
             ].map((item, index) => (
@@ -116,9 +116,9 @@ export default function Home() {
           <h2 className="section-title">製品について</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "富山工場", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
-              { name: "ハードカプセル", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/supple.jpg" },
-              { name: "茶葉パック", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/tea.jpg" },
+              { name: "生産設備", description: "最新のテクノロジーを駆使した製造設備を備え、 高品質な製品を効率的に生産", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/top.jpeg" },
+              { name: "ハードカプセル", description: "1分間に最大約830カプセルの生産が可能で、安定した品質を実現", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/supple.jpg" },
+              { name: "茶葉パック", description: "高精度な超音波シール・カット方式を採用したティーバッグ包装機で、さまざまなサイズの包材に対応し、安定した品質での生産を実現", image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/tea.jpg" },
             ].map((product, index) => (
               <div
                 key={product.name}
@@ -134,8 +134,9 @@ export default function Home() {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{product.name}</h3>
-                  <Link href="/facilities" className="text-primary-600 hover:text-primary-700 flex items-center">
-                    詳細を見る
+                  <p className="text-gray-600">{product.description}</p>
+                  <Link href="/facilities" className="text-primary-600 hover:text-primary-700 flex items-center link">
+                   生産設備を見る
                     <ChevronRight size={20} className="ml-1" />
                   </Link>
                 </div>
@@ -182,7 +183,7 @@ export default function Home() {
 
 
       {/* News Section */}
-      <section className="py-24 bg-gray-50 news">
+      <section className="py-24 bg-gray-50 off">
         <div className="container mx-auto px-6">
           <h2 className="section-title">最新ニュース</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
