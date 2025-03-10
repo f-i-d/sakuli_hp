@@ -63,10 +63,6 @@ export default function About() {
                     <span className="ml-4">2025年2月</span>
                   </li>
                   <li>
-                    <span className="font-semibold w-32">資本金 : </span>
-                    <span className="ml-4">1億円</span>
-                  </li>
-                  <li>
                     <span className="font-semibold w-32">所在地 : </span>
                     <span className="ml-4">富山県富山市上飯野15</span>
                   </li>
