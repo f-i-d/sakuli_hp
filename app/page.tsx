@@ -144,7 +144,7 @@ export default function Home() {
             ))}
           </div>
           <p className="memo">
-          上記以外の健康補助売食品の製造も提携先工場にてご対応可能です。
+          上記以外の健康補助食品の製造も提携先工場にてご対応可能です。
           </p>
         </div>
       </section>
