@@ -23,7 +23,7 @@ export default function Strengths() {
     },
     {
       title: "安全・信頼・誠実なものづくり",
-      description: "お客様の健康を支える企業として、透明性のある製品開発 を徹底し、信頼されるブランドを築きます。品質管理はもちろん、成分の安全性、効果の裏付けを明確にし、誠実なものづくりを行います。",
+      description: "お客様の健康を支える企業として、透明性のある製品開発を徹底し、信頼されるブランドを築きます。品質管理はもちろん、成分の安全性、効果の裏付けを明確にし、誠実なものづくりを行います。",
       icon: Users,
       image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy2-3.jpg",
     },
