@@ -64,7 +64,7 @@ export default function About() {
                   </li>
                   <li>
                     <span className="font-semibold w-32">所在地 : </span>
-                    <span className="ml-4">富山県富山市上飯野15</span>
+                    <span className="ml-4">富山県富山市新屋166-1</span>
                   </li>
                   <li>
                     <span className="font-semibold w-32">代表者 : </span>
