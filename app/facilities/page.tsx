@@ -63,7 +63,7 @@ const facilities: Facility[] = [
       "■シール速度 : 0-13m/min（可変）",
       "■シール : 13mm",
     ],
-    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy4.jpeg",
+    image: "https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/philosophy7.jpeg",
   },
   {
     name: "全自動カプセル検査設備",
