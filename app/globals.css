@@ -100,8 +100,9 @@ body {
   margin: 0;
 }
 h1{
+  font-size: 45px !important;
   letter-spacing: 1px;
-  line-height: 1.25 !important;
+  line-height: 1.75 !important;
 }
 .text-xl {
   line-height: 2 !important;
@@ -230,6 +231,14 @@ section{
   }
   .mb-6 {
     margin-bottom: 0.5rem;
+  }
+  h1{
+    font-size: 25px !important;
+    letter-spacing: 1px;
+    line-height: 1.75 !important;
+  }
+  .header-txt{
+    font-size: 14px !important;
   }
 }
 @media (min-width: 640px) {

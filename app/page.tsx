@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section - アニメーションを強化 */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fv.png"
+          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fvA.png"
           alt="SAKULI - アイデアをカタチに"
           fill
           className="object-cover transform scale-105 animate-ken-burns"
@@ -17,14 +17,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
         <div className="relative z-10 text-center text-white max-w-4xl px-6 top-title">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
-          OEM・ODMあなたのアイデア<br className="sp" />カタチに
+          OEM・ODM<br className="pc" />あなたの<br className="sp" />アイデアをカタチに
             <br />
-            <span className="text-primary-400">未来</span>を創る
+            サプリメントの<span className="text-primary-400">未来</span>を創る企業
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
-            商品企画から最終製品化まで、
-            <br />
-            トータルでサポートする<br className="sp" /><span className="text-primary-300">製造パートナー</span>
+          <p className=" header-txt text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
+          それが「SAKULI」です!<br />
+          商品企画・製品化・販売・物流を一気通貫で<br className="sp" />サポートするベストパートナー
           </p>
           <Link 
             href="/contact" 
