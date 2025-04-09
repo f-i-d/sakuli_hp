@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
         <div className="relative z-10 text-center text-white max-w-4xl px-6 top-title">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
-            アイデアを<br className="sp" />カタチに
+          OEM・ODMあなたのアイデア<br className="sp" />カタチに
             <br />
             <span className="text-primary-400">未来</span>を創る
           </h1>
