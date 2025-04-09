@@ -17,7 +17,7 @@ const facilities: Facility[] = [
   {
     name: "全自動カプセル充填機",
     description:
-      "全自動カプセル充填機。最新鋭のリキッドドリンク真空ポンプとリサイクル水タンクを搭載し、1分間に最大約800カプセルの生産が可能です。一貫した高品質と効率的な生産体制で、短納期にも柔軟に対応します。",
+      "最新鋭のリキッドドリンク真空ポンプとリサイクル水タンクを搭載し、1分間に最大約800カプセルの生産が可能です。一貫した高品質と効率的な生産体制で、短納期にも柔軟に対応します。",
     specs: [
       "生産能力 : 最大30万カプセル/日",
       "適用カプセルサイズ : 1号カプセル",
@@ -130,7 +130,7 @@ export default function Facilities() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
         <div className="relative z-10 text-center text-white max-w-4xl px-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
-          最先端の<br className="sp" />製造設備
+          最先端の製造設備
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
           SAKULIは、最新のテクノロジーを駆使した製造設備を備え、 高品質な製品を効率的に生産します。私たちの設備が、

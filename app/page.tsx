@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
           OEM・ODM<br className="pc" />あなたの<br className="sp" />アイデアをカタチに
             <br />
-            サプリメントの<span className="text-primary-400">未来</span>を創る企業
+            サプリメントの<span className="text-primary-400">未来</span>を<br className="sp" />創る企業
           </h1>
           <p className=" header-txt text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
           それが「SAKULI」です!<br />
