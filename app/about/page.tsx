@@ -72,7 +72,7 @@ export default function About() {
                   </li>
                   <li>
                     <span className="font-semibold w-32">事業内容 : </span>
-                    <span className="ml-4"><br />⚫︎健康食品・サプリメント(ハードカプセル、茶葉パック等)のOEM,ODM製造<br />⚫︎製剤設計・商品企画支援<br />⚫︎充填・包装・物流まで一貫した製造サービス<br />⚫︎品質管理・品質保証体制の構築と運用</span>
+                    <span className="ml-4"><br />⚫︎健康食品・サプリメント(ハードカプセル、茶葉パック等)のOEM・ODM製造<br />⚫︎製剤設計・商品企画支援<br />⚫︎充填・包装・物流まで一貫した製造サービス<br />⚫︎品質管理・品質保証体制の構築と運用</span>
                   </li>
                 </ul>
               </CardContent>
@@ -87,9 +87,9 @@ export default function About() {
               </CardHeader>
               <CardContent className="pt-4 space-y-4 text-gray-700 text-lg">
                 <p>
-                企業理念<br />
+                ⚫︎企業理念<br />
                 「私たちは、確かな技術と徹底した品質管理で、人々の健康を支える製品づくりを追求し、社会の安心と豊かさに貢献します。」<br /><br />
-                ビジョン<br />
+                ⚫︎ビジョン<br />
                 「革新的なものづくりを通じて、お客様のビジネスに新たな価値を提供します。私たちは、グローバル市場を見据えた高付加価値製品を供給し、
                 社会課題の解決と持続可能な未来の創造に挑戦し続けます。」
                 </p>
