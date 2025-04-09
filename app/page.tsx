@@ -19,10 +19,10 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow animate-fade-in-up leading-tight">
           OEM・ODM<br className="pc" />あなたの<br className="sp" />アイデアをカタチに
             <br />
-            サプリメントの<span className="text-primary-400">未来</span>を<br className="sp" />創る企業
+            サプリメントの<br className="sp" /><span className="text-primary-400">未来</span>を創る企業
           </h1>
           <p className=" header-txt text-xl md:text-2xl mb-8 text-shadow animate-fade-in-up opacity-90" style={{ animationDelay: "0.2s" }}>
-          それが「SAKULI」です!<br />
+          それが「SAKULI」です！<br />
           商品企画・製品化・販売・物流を<br className="sp" />一気通貫でサポートする<br className="sp" />ベストパートナー
           </p>
           <Link 
