@@ -6,12 +6,26 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section - アニメーションを強化 */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden img-frame">
         <Image
-          src="https://shop.yoi-japan.jp/themes/simple_02/p/images/skl_img/fvA.png"
+          src="#"
           alt="SAKULI - アイデアをカタチに"
           fill
-          className="object-cover transform scale-105 animate-ken-burns"
+          className="object-cover transform scale-105 animate-ken-burns img-01"
+          priority
+        />
+                <Image
+          src="#"
+          alt="SAKULI - アイデアをカタチに"
+          fill
+          className="object-cover transform scale-105 animate-ken-burns img-02"
+          priority
+        />
+                <Image
+          src="#"
+          alt="SAKULI - アイデアをカタチに"
+          fill
+          className="object-cover transform scale-105 animate-ken-burns img-03"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
