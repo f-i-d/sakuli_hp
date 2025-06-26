@@ -74,6 +74,9 @@ export default function About() {
                     <span className="font-semibold w-32">事業内容 : </span>
                     <span className="ml-4"><br />⚫︎健康食品・サプリメント(ハードカプセル、茶葉パック等)のOEM・ODM製造<br />⚫︎製剤設計・商品企画支援<br />⚫︎充填・包装・物流まで一貫した製造サービス<br />⚫︎品質管理・品質保証体制の構築と運用</span>
                   </li>
+                  <li>
+                    <span className="ml-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.804643603598!2d137.2464709104897!3d36.72725277169417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff799e7820e63f1%3A0xd905cf19a246fd89!2z44CSOTMwLTA4MjIg5a-M5bGx55yM5a-M5bGx5biC5paw5bGLMQ!5e0!3m2!1sja!2sjp!4v1750899925814!5m2!1sja!2sjp" width="400" height="300" loading="lazy"></iframe></span>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
