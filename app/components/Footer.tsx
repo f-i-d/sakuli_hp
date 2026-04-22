@@ -11,6 +11,11 @@ export default function Footer() {
             <nav>
               <ul className="space-y-2">
               <li>
+                  <Link href="https://www.rakuten.co.jp/sakulishop/" className="hover:text-primary-400 transition-colors">
+                    商品ページ
+                  </Link>
+              </li>
+              <li>
                   <Link href="/" className="hover:text-primary-400 transition-colors">
                     ホーム
                   </Link>
@@ -33,6 +38,16 @@ export default function Footer() {
                 <li>
                   <Link href="/contact" className="hover:text-primary-400 transition-colors">
                     お問い合わせ
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-primary-400 transition-colors">
+                    プライバシーポリシー
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/order" className="hover:text-primary-400 transition-colors">
+                    特定商取引法に基づく表記
                   </Link>
                 </li>
               </ul>

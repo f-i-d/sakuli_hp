@@ -500,3 +500,28 @@ section {
     display: none;
   }
 }
+.order{
+  font-size: 14px;
+}
+.order-title{
+  font-size: 14px;
+  color: #8cc63f;
+}
+ span a , p a{
+  color: #3279e4;
+}
+dd{
+  border-bottom: 1px solid;
+  width: 100%;
+  max-width: 700px;
+  padding-bottom: 10px;
+}
+dt{
+  color: #8cc63f;
+  padding-top: 10px;
+  line-height: 1;
+}
+h3{
+  font-weight: bold;
+  margin-top: 10px;
+}
