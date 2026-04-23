@@ -55,7 +55,7 @@ export default function About() {
                   </li>
                   <li>
                     <span className="font-semibold order-title">所在地</span>
-                    <span className="ml-4 order">930-0822 富山県富山市新屋165-1</span>
+                    <span className="ml-4 order">930-0822 富山県富山市新屋166-1</span>
                   </li>
                   <li>
                     <span className="font-semibold order-title">問い合わせ</span>
@@ -202,7 +202,7 @@ export default function About() {
                     【再送料】店舗負担<br />  
 
                     <h3>■返送先</h3>
-                    【住所】9300822　富山県富山市新屋１６６－１<br />
+                    【住所】9300822　富山県富山市新屋166-1<br />
                     【電話番号】05038509480<br />
                     【FAX番号】05038509480<br />
                     </p>

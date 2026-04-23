@@ -112,7 +112,7 @@ export default function About() {
                     ■問合せ窓口<br />
                     TEL：050-3850-9480<br />
                     E-mail：info@sakuli.jp<br />
-                    住所　：富山県富山市新屋166-1</p>
+                    住所　：富山県富山市新屋165-1</p>
                   </li>     
                    <li>
                     <span className="font-semibold order-title">第9条　改訂</span>
