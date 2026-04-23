@@ -62,7 +62,7 @@ export default function Footer() {
                 <Phone size={18} className="mr-2 text-primary-400" /><u><a href="tel:050-3850-9480">050-3850-9480</a></u>
               </p>
               <p className="flex items-center">
-                <MapPin size={18} className="mr-2 text-primary-400" /> 〒930-0827 富山県富山市新屋166-1
+                <MapPin size={18} className="mr-2 text-primary-400" /> 〒930-0827 富山県富山市新屋165-1
               </p>
             </div>
           </div>

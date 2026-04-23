@@ -72,7 +72,7 @@ export default function About() {
                   </li>
                   <li>
                     <span className="font-semibold w-32">所在地</span>
-                    <span className="ml-4">富山県富山市新屋166-1</span>
+                    <span className="ml-4">富山県富山市新屋165-1</span>
                   </li>
                   <li>
                     <span className="map">■ご来社の皆さまへ｜所在地に関するご案内<br />
