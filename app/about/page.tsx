@@ -72,12 +72,12 @@ export default function About() {
                   </li>
                   <li>
                     <span className="font-semibold w-32">所在地</span>
-                    <span className="ml-4">富山県富山市新屋166-1</span>
+                    <span className="ml-4">富山県富山市新屋166番地1</span>
                   </li>
                   <li>
                     <span className="map">■ご来社の皆さまへ｜所在地に関するご案内<br />
                     当社 株式会社SAKULI（サクリ） は、
-                    「〒930-0822 富山県富山市新屋166-1」にございますが、
+                    「〒930-0822 富山県富山市新屋166番地1」にございますが、
                     Googleマップで検索すると正確な位置が表示されない場合がございます。
                     実際の所在地は、下記MAPの【ジニアス様】の敷地裏手、大通りから一本入った反対側になります。</span>
                     <span className="ml-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.7904839329854!2d137.2519125!3d36.7275928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff799ddb959807f%3A0x29191fb87c2448b1!2z44K444OL44Ki44K5!5e0!3m2!1sja!2sjp!4v1750904652373!5m2!1sja!2sjp" width="100%" height="350" loading="lazy"></iframe></span>
